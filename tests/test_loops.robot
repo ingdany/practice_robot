@@ -13,6 +13,7 @@ Login Test
     @{users}    Create List    admin    user1    user2
     FOR    ${user}    IN    @{users}
         Log    User: ${user}
+        Log To Console    message=User: ${user}
     END
 
 *** Keywords ***
