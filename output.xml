@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.11.9 on win32)" generated="2025-02-06T20:00:32.790223" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Set Speed" source="C:\Users\Admin\.git\practice_robot\tests\test_set_speed.robot">
+<test id="s1-t1" name="Open Browser Session" line="13">
+<kw name="Open Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-06T20:00:33.306080" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/v1/index.html'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-06T20:00:33.306080" elapsed="2.591404"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-06T20:00:35.898483" elapsed="0.093166"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-02-06T20:00:35.991649" elapsed="0.000551"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${input_username}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-06T20:00:35.993214" elapsed="0.458090"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-06T20:00:36.452095" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>${input_username}</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T20:00:36.451304" elapsed="0.865859"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-06T20:00:37.318173" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>${input_password}</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T20:00:37.317163" elapsed="0.861618"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-06T20:00:38.180291" level="INFO">Clicking element 'id=login-button'.</msg>
+<arg>${login_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T20:00:38.180291" elapsed="0.951980"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Products</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-06T20:00:39.132271" elapsed="0.223554"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-02-06T20:00:39.770573" level="INFO">Current page contains text 'Products'.</msg>
+<arg>Products</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-02-06T20:00:39.355825" elapsed="0.414748"/>
+</kw>
+<arg>${url}</arg>
+<status status="PASS" start="2025-02-06T20:00:33.305079" elapsed="6.465494"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-06T20:00:39.770573" elapsed="2.531030"/>
+</kw>
+<status status="PASS" start="2025-02-06T20:00:33.304071" elapsed="8.998114"/>
+</test>
+<status status="PASS" start="2025-02-06T20:00:32.795340" elapsed="9.507852"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Set Speed" id="s1" pass="1" fail="0" skip="0">Test Set Speed</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

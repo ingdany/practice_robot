@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.11.9 on win32)" generated="2025-02-06T14:44:15.558889" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Conditional" source="C:\Users\Admin\.git\practice_robot\tests\test_conditional.robot">
+<test id="s1-t1" name="Login Test" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-06T14:44:15.868768" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/v1/index.html'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-06T14:44:15.868768" elapsed="1.854672"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-06T14:44:17.729520" elapsed="0.168110"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Login Test">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-06T14:44:17.899671" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/v1/index.html'.</msg>
+<arg>https://www.saucedemo.com/v1/index.html</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-06T14:44:17.899671" elapsed="2.504975"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-06T14:44:20.404646" elapsed="0.054348"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-06T14:44:20.461538" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T14:44:20.459503" elapsed="0.319800"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-06T14:44:20.779809" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T14:44:20.779809" elapsed="0.134868"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-02-06T14:44:20.914677" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T14:44:20.914677" elapsed="0.292447"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-02-06T14:44:21.238770" level="INFO">Current page contains text 'Products'.</msg>
+<arg>Products</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-02-06T14:44:21.208135" elapsed="0.030635"/>
+</kw>
+<arg>${users}[user_name]</arg>
+<arg>${users}[password]</arg>
+<status status="PASS" start="2025-02-06T14:44:17.899138" elapsed="3.340748"/>
+</kw>
+<arg>'${users}[user_name]' == 'standard_user'</arg>
+<arg>Login Test</arg>
+<arg>${users}[user_name]</arg>
+<arg>${users}[password]</arg>
+<arg>ELSE</arg>
+<arg>Log</arg>
+<arg>message=Username is not standard_user</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-02-06T14:44:17.897630" elapsed="3.342256"/>
+</kw>
+<status status="PASS" start="2025-02-06T14:44:15.867198" elapsed="5.372688"/>
+</test>
+<status status="PASS" start="2025-02-06T14:44:15.559908" elapsed="5.681989"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Conditional" id="s1" pass="1" fail="0" skip="0">Test Conditional</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.11.9 on win32)" generated="2025-02-06T19:47:31.613278" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Set Speed" source="C:\Users\Admin\.git\practice_robot\tests\test_set_speed.robot">
+<test id="s1-t1" name="Open Browser Session" line="9">
+<kw name="Open Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-06T19:47:31.995117" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/v1/index.html'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-06T19:47:31.995117" elapsed="2.413625"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-02-06T19:47:34.409743" elapsed="0.000510"/>
+</kw>
+<arg>${url}</arg>
+<status status="PASS" start="2025-02-06T19:47:31.993313" elapsed="2.416940"/>
+</kw>
+<status status="PASS" start="2025-02-06T19:47:31.992283" elapsed="2.417970"/>
+</test>
+<status status="PASS" start="2025-02-06T19:47:31.644083" elapsed="2.769785"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Set Speed" id="s1" pass="1" fail="0" skip="0">Test Set Speed</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
