@@ -14,6 +14,8 @@ Login Test
     FOR    ${user}    IN    @{users}
         Log    User: ${user}
         Log To Console    message=User: ${user}
+        Log    message=user_name: ${user}\[user_name]
+        Log    message=password: ${user}\[password]
     END
 
 *** Keywords ***

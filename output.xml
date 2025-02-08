@@ -1,69 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.11.9 on win32)" generated="2025-02-08T11:45:29.862627" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2 (Python 3.11.9 on win32)" generated="2025-02-08T12:02:46.358857" rpa="false" schemaversion="5">
 <suite id="s1" name="Test Loops" source="C:\Users\Admin\.git\practice_robot\tests\test_loops.robot">
 <test id="s1-t1" name="Login Test" line="12">
 <kw name="Create List" owner="BuiltIn">
-<msg time="2025-02-08T11:45:30.364697" level="INFO">@{users} = [ admin | user1 | user2 ]</msg>
+<msg time="2025-02-08T12:02:46.759653" level="INFO">@{users} = [ admin | user1 | user2 ]</msg>
 <var>@{users}</var>
 <arg>admin</arg>
 <arg>user1</arg>
 <arg>user2</arg>
 <doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2025-02-08T11:45:30.363170" elapsed="0.001527"/>
+<status status="PASS" start="2025-02-08T12:02:46.759653" elapsed="0.000971"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-02-08T11:45:30.364697" level="INFO">User: admin</msg>
+<msg time="2025-02-08T12:02:46.760624" level="INFO">User: admin</msg>
 <arg>User: ${user}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-02-08T11:45:30.364697" elapsed="0.000000"/>
+<status status="PASS" start="2025-02-08T12:02:46.760624" elapsed="0.000000"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>message=User: ${user}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-02-08T11:45:30.365733" elapsed="0.000000"/>
+<status status="PASS" start="2025-02-08T12:02:46.761648" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-08T12:02:46.762624" level="INFO">user_name: admin[user_name]</msg>
+<arg>message=user_name: ${user}\[user_name]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-08T12:02:46.761648" elapsed="0.000976"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-08T12:02:46.762624" level="INFO">password: admin[password]</msg>
+<arg>message=password: ${user}\[password]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-08T12:02:46.762624" elapsed="0.000000"/>
 </kw>
 <var name="${user}">admin</var>
-<status status="PASS" start="2025-02-08T11:45:30.364697" elapsed="0.001036"/>
+<status status="PASS" start="2025-02-08T12:02:46.760624" elapsed="0.002000"/>
 </iter>
 <iter>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-02-08T11:45:30.366708" level="INFO">User: user1</msg>
+<msg time="2025-02-08T12:02:46.763960" level="INFO">User: user1</msg>
 <arg>User: ${user}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-02-08T11:45:30.366708" elapsed="0.000000"/>
+<status status="PASS" start="2025-02-08T12:02:46.762624" elapsed="0.001336"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>message=User: ${user}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-02-08T11:45:30.366708" elapsed="0.000996"/>
+<status status="PASS" start="2025-02-08T12:02:46.763960" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-08T12:02:46.765467" level="INFO">user_name: user1[user_name]</msg>
+<arg>message=user_name: ${user}\[user_name]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-08T12:02:46.763960" elapsed="0.001507"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-08T12:02:46.765467" level="INFO">password: user1[password]</msg>
+<arg>message=password: ${user}\[password]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-08T12:02:46.765467" elapsed="0.001012"/>
 </kw>
 <var name="${user}">user1</var>
-<status status="PASS" start="2025-02-08T11:45:30.365733" elapsed="0.001971"/>
+<status status="PASS" start="2025-02-08T12:02:46.762624" elapsed="0.003855"/>
 </iter>
 <iter>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-02-08T11:45:30.368706" level="INFO">User: user2</msg>
+<msg time="2025-02-08T12:02:46.766479" level="INFO">User: user2</msg>
 <arg>User: ${user}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-02-08T11:45:30.367704" elapsed="0.001002"/>
+<status status="PASS" start="2025-02-08T12:02:46.766479" elapsed="0.000000"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>message=User: ${user}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-02-08T11:45:30.368706" elapsed="0.001003"/>
+<status status="PASS" start="2025-02-08T12:02:46.767482" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-08T12:02:46.768482" level="INFO">user_name: user2[user_name]</msg>
+<arg>message=user_name: ${user}\[user_name]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-08T12:02:46.767482" elapsed="0.001000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-08T12:02:46.768482" level="INFO">password: user2[password]</msg>
+<arg>message=password: ${user}\[password]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-08T12:02:46.768482" elapsed="0.000000"/>
 </kw>
 <var name="${user}">user2</var>
-<status status="PASS" start="2025-02-08T11:45:30.367704" elapsed="0.002005"/>
+<status status="PASS" start="2025-02-08T12:02:46.766479" elapsed="0.002003"/>
 </iter>
 <var>${user}</var>
 <value>@{users}</value>
-<status status="PASS" start="2025-02-08T11:45:30.364697" elapsed="0.005012"/>
+<status status="PASS" start="2025-02-08T12:02:46.760624" elapsed="0.007858"/>
 </for>
-<status status="PASS" start="2025-02-08T11:45:30.363170" elapsed="0.006539"/>
+<status status="PASS" start="2025-02-08T12:02:46.758626" elapsed="0.010855"/>
 </test>
-<status status="PASS" start="2025-02-08T11:45:29.865139" elapsed="0.505569"/>
+<status status="PASS" start="2025-02-08T12:02:46.361860" elapsed="0.408616"/>
 </suite>
 <statistics>
 <total>
